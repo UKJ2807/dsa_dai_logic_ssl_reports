@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <link rel="stylesheet" href="setup.css" >
+        <div class="form-wrapper">
+            <h1>Match Setup</h1>
+        <p>Team 1 name:<input id="team_1_name" type="text"></p>
+        <p>Team 2 name:<input id="team_2_name" type="text"></p>
+        <p>Toss winner:</p>
+        <select id="toss_winner">
+            <option value="" selected disabled>Select</option>
+            <option value="team1" id="option1">Team 1</option>
+            <option value="team2" id="option2">Team 2</option>
+        </select>
+        <p>Toss decision:</p>
+        <select id="toss_decision">
+            <option value="" selected disabled>Select</option>
+            <option value="Bat">Bat</option>
+            <option value="Bowl">Bowl</option>
+        </select>
+        <br><br>
+        <button type="button" id="start" onclick="start_match()">Start Match</button>
+        <script src="score.js"></script>
+    </div>
+    </body>
+</html>

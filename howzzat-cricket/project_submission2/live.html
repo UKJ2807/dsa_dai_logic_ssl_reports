@@ -1,0 +1,89 @@
+<html>
+    <link rel="stylesheet" href="live.css" >
+    <head>
+    </head>
+    <body>
+        <div class="container">
+        <div id="score_display"></div>
+        <div id="secondary"><h1 id="batter table">Batter Table</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>position</th>
+                    <th>Name</th>
+                    <th>Runs Scored</th>
+                    <th>Balls Played</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>Strike Rate</th>
+                </tr>
+            </thead>
+            <tbody id="live-batters tbody">
+                <tr>
+                    <td>Striker</td>
+                    <td id="str_name"></td>
+                    <td id="str_runs"></td>
+                    <td id="str_balls"></td>
+                    <td id="str_4s"></td>
+                    <td id="str_6s"></td>
+                    <td id="str_strikerate"></td>
+                </tr>
+                <tr>
+                    <td>Non-Striker</td>
+                    <td id="nstr_name"></td>
+                    <td id="nstr_runs"></td>
+                    <td id="nstr_balls"></td>
+                    <td id="nstr_4s"></td>
+                    <td id="nstr_6s"></td>
+                    <td id="nstr_strikerate"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Bowler Table</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Bowler Name</th>
+                    <th>Overs</th>
+                    <th>Maidens</th>
+                    <th>Runs Conceded</th>
+                    <th>Wickets</th>
+                    <th>Economy Rate</th>
+                </tr>
+            </thead>
+            <tbody id="live-bowlers tbody">
+                <tr>
+                    <td id="current_bowler"></td>
+                    <td id="overs"></td>
+                    <td id="maidens"></td>
+                    <td id="runs_conceded"></td>
+                    <td id="wickets"></td>
+                    <td id="economy_rate"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Runs on this ball:
+        <input type="radio" name="runs" value="0"> 0
+        <input type="radio" name="runs" value="1"> 1 
+        <input type="radio" name="runs" value="2"> 2 
+        <input type="radio" name="runs" value="3"> 3 
+        <input type="radio" name="runs" value="4"> 4 
+        <input type="radio" name="runs" value="5"> 5 
+        <input type="radio" name="runs" value="6"> 6
+        <p id="crr1" class="hidden">Current Run Rate:<span id="crr" class="hidden"></span></p>
+        <p id="rrr1" class="hidden">Required Run Rate:<span id="rrr" class="hidden"></span></p>
+    </p>
+</div>
+    <div class="button-container">
+        <button id="no_ball" onclick="no_ball()">No ball</button>
+        <button id="wide" onclick="wide()">Wide</button>
+        <button id="submit_ball">Submit</button>
+        <button id="wicket">Wicket</button>
+        <button id="go_to_scorecard" onclick="go_to_scorecard()">Go to Scorecard</button>
+        <button id="go_to_matchsummary" class="hidden" onclick="go_to_matchsummary()">Match Summary</button>
+    </div>
+    <div id="commentary"></div>
+</div>
+    </body>
+    <script src="score.js"></script>
+</html>

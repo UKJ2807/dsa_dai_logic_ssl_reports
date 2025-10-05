@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* optional spacing between buttons */
+    margin-top: 20px; /* space from previous section */
+}
+#secondary{
+    padding-left: 100px;
+    padding-right:100px;
+}
+body{
+    background:url("pitch.jpeg");
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    opacity:0.7;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    gap:50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
